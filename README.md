@@ -1,6 +1,4 @@
 - 👋 Hi, I’m @rebeccax06
-- 👀 I enjoy doing puzzles and playing soccer. 
-- 🌱 I’m currently learning python and HTML.
 - 💞️ I’m looking to gain some experience.
 - 📫 How to reach me rebeccax1206@gmail.com
 
