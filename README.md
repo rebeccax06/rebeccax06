@@ -1,5 +1,4 @@
 - 👋 Hi, I’m @rebeccax06
-- 💞️ I’m looking to gain some experience.
 - 📫 How to reach me rebeccax1206@gmail.com
 
 <!---
