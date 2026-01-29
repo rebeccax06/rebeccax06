@@ -1,0 +1,34 @@
+name: Generate GitHub Stats
+
+on:
+  schedule:
+    - cron: "0 3 * * *"   # daily
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  stats:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Generate overview.svg
+        uses: lowlighter/metrics@latest
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          user: rebeccax06
+
+          template: classic
+          filename: generated/overview.svg
+          config_timezone: America/New_York
+
+          base: activity, community, repositories, metadata
+
+          plugin_contributors: yes                     # repos contributed to
+          plugin_followup: yes                         # PRs merged
+          plugin_lines: yes                            # lines of code changed
+          plugin_repositories: yes                     # repo stats (forks)
+          plugin_traffic: no                           # off by default (views)
+
+          # Make it clean & readable
+          config_display: large
