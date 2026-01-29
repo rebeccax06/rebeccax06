@@ -25,6 +25,7 @@ jobs:
           # Activity-only stats
           base: activity
           plugin_followup: yes      # Pull requests merged
+          plugin_followup_sections: pull_requests 
           plugin_lines: yes         # Lines of code changed
 
           # Appearance
