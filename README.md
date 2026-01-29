@@ -6,5 +6,5 @@
 <a href="https://github.com/anuraghazra/convoychat">
   <img height=200 align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=rebeccax06&show_icons=true&theme=omni&layout=donut&card_width=320" />
 </a>
-![GitHub Stats](./generated/overview.svg)
+<img src="./generated/overview.svg?v=1" height="200" />
 
