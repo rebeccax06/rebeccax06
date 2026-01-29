@@ -2,7 +2,7 @@ name: Generate GitHub Stats
 
 on:
   schedule:
-    - cron: "0 3 * * *"   # daily
+    - cron: "0 3 * * *"   # runs daily
   workflow_dispatch:
 
 permissions:
@@ -22,13 +22,11 @@ jobs:
           filename: generated/overview.svg
           config_timezone: America/New_York
 
-          base: activity, community, repositories, metadata
+          # Activity-only stats
+          base: activity
+          plugin_followup: yes      # Pull requests merged
+          plugin_lines: yes         # Lines of code changed
 
-          plugin_contributors: yes                     # repos contributed to
-          plugin_followup: yes                         # PRs merged
-          plugin_lines: yes                            # lines of code changed
-          plugin_repositories: yes                     # repo stats (forks)
-          plugin_traffic: no                           # off by default (views)
-
-          # Make it clean & readable
+          # Appearance
           config_display: large
+          config_theme: omni
